@@ -1,0 +1,249 @@
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    background-color:#4567b7;
+    
+}
+header {
+    background-color: #2f4d7f; 
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    justify-content:space-between
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:2em;
+}
+
+.mentor-signup-form {
+background-color:#6495ed;
+padding:2em;
+border:1px solid #2196F3;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+width:500px;
+}
+
+.mentor-signup-form h2{
+    color:#2f4d7f;
+    font-size:24px;
+    margin-bottom:20px;
+}
+.form-group {
+margin-bottom:10px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:10px;
+    color:#333;
+}
+.form-group input,textarea{
+    width:95%;
+    height:40px;
+    margin-bottom:20px;
+    padding:10px;
+    border:1px solid #ccc;
+}
+.form-group select{
+    width:100%;
+    height:40px;
+    margin-bottom:20px;
+    padding:10px;
+    border:1px solid #ccc;
+}
+
+
+.Benefits-for-mentors{
+    background-color:#ADD8E6;
+    padding:2em;
+    border:1px solid #2196F3;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    margin-top:40px;
+    width:500px;
+}
+
+.Benefits-for-mentors h2{
+    color:#2196F3;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.faq {
+background-color:#87CEEB;
+padding:3em;
+border:1px solid #2196F3;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+margin-top:40px;
+width:700px;
+}
+
+.faq h2{
+    color:#2196F3;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.faq dl{
+    padding:0;
+    margin:0;
+}
+
+.faq dt{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.faq dd{
+    margin-bottom:20px;
+}
+.flip-box {
+background-color: transparent;
+width: 300px;
+height: 200px;
+perspective: 1000px;
+margin: 20px;
+}
+
+.flip-box-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.flip-box-front {
+background-color: #87CEEB;
+color: #333;
+z-index: 2;
+}
+
+.flip-box-back {
+background-color: #2196F3;
+color: #fff;
+transform: rotateY(180deg);
+}
+
+.cube {
+width: 200px;
+height: 200px;
+transform-style: preserve-3d;
+animation: rotate 10s infinite;
+margin-top: 40px;
+}
+
+@keyframes rotate {
+0% {
+transform: rotateX(0) rotateY(0);
+}
+100% {
+transform: rotateX(360deg) rotateY(360deg);
+}
+}
+
+.cube div {
+position: absolute;
+width: 400px;
+height: 400px;
+border: 1px solid #2196F3;
+background-color: #87CEEB;
+}
+
+.cube .front {
+transform: translateZ(100px);
+}
+
+.cube .back {
+transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube .left {
+transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube .right {
+transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube .top {
+transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube .bottom {
+transform: rotateX(-90deg) translate
+}
+
+.animated-title {
+animation: animate-title 2s infinite;
+}
+
+@keyframes animate-title {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.2);
+}
+100% {
+transform: scale(1);
+}
+}
+
+button[type="submit"] {
+background-color: #2196F3;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button[type="submit"]:hover {
+background-color: #1A76D2;
+}
+
+.flip-box-section {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.cube-section {
+display: flex;
+justify-content: center;
+align-items: center;
+}    

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mentor sign-up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mentor.css">
+       
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                        
+                    <li><a href="LandingPage.html">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <section class="mentor-signup-form">
+            <h2 class="animated-title">Become a Mentor</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><!-- comment -->
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><!-- comment -->
+                </div>
+                
+                <div class="form-group">
+                    <label for="industry">Industry:</label>
+                    <input type="text" id="profession" name="profession" required><!-- comment -->
+                </div>
+                
+                <div class="form-group">
+                    <label for="jobFunction">Job Function:</label>
+                    <textarea id="expertise" name="expertise" required></textarea>
+                </div>
+                
+                 <div class="form-group">
+                    <label for="availability">Availability:</label>
+                    <select id="availability" name="availability" required>
+                        <option value="full-time">Full-time</option>
+                        <option value="full-time">Part-time</option>
+                        <option value="full-time">Flexible</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="preference">Preference:</label>
+                    <textarea id="preference" name="preference" required></textarea>
+                </div>
+                <button type="submit">Register as mentor</button>
+            </form>    
+        </section>  
+        
+        <section class="Benefits-for-mentors">
+            <h2 class="animated-title">Benefits of Mentoring</h2>
+            <ul>
+                <li>Make a positive impact on someone's life</li>
+                <li>Develop leadership and coaching skills</li>
+                <li>Expand your professional network</li>
+                <li>Enhance your personal and professional growth</li>
+            </ul>
+        </section>
+        <section class="faq">
+            <h2 class="animated-title">Frequently Asked Questions</h2>
+            <dl>
+                <dt>What is mentoring?</dt>
+                <dd>
+                    Mentoring is a relation between an experienced individual(the mentor) and less experienced individual(the mentee),where the mentor provides guidance, support, and advice to help mentee achieve their goals
+                </dd>
+                
+                <dt>How much do I need to commit to mentoring</dt>
+                <dd>
+                    The time commitment for mentoring can vary depending on the specific program and the need of the mentee.However, most mentoring relationships require a commitment of at least a few hours per month.
+                </dd>
+                
+                <dt>What kind of support will I receive as a mentor</dt>
+                <dd>
+                    As a mentor,you will receive support and guidance from our mentoring program staff.We will provide you with training,resources, and ongoing support to help you succeed in your mentoring role.
+                </dd>
+            </dl>
+        </section><!-- comment -->
+        <section class="flip-box-section">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Why Become mentor</h2>
+                        <p>Becoming a mentor is a great way to make a positive impact on someone's life.As a mentor,you will the opportunity to share your knowledge, experience and skills with someone who is eager to learn and grow</p>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>What to expect</h2>
+                        <p>As amentor,you can expect to work closely with your mentee to help them achieve their goal.You will provide guidance, support and advice and help your mentee to develop new skills and gain confidence</p>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section class="cube-section">
+            <div class="cube-container">
+                <div class="cube">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="button-section">
+            <button id="stop-button">Stop Cube</button>
+        </section>
+        </main>
+        <script src="mentor.js"></script>
+    </body>
+</html>

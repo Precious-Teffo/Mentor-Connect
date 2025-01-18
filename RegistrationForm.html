@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="form.css">
+        
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" class="logo">Mentor Connect</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="registration-form">
+            <h2>Register</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><!-- comment -->
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><!-- comment -->
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><!-- comment -->
+                </div>
+                
+                <div class="form-group">
+                    <label for="role">Register as:</label>
+                    <select id="role" name="role" required>
+                        <option value="mentor">Mentor</option>  
+                        <option value="mentee">Mentee</option>  
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="terms">I agree to terms and conditions</label>
+                    <input type="checkbox" id="terms" name="terms" required><!-- comment -->
+                    <p id="terms-text">By registering,you agree to our terms and conditions,including our privacy policy and cookies policy.You also agree to receive email from us regarding your account and mentorship opportunities</p>
+                </div>
+                
+                <button type="submit" id="submit-btn">Register</button>
+            </form>
+        </section>
+        <script src="register.js"></script>
+    </body>
+</html>

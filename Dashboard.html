@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Mentor connect Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Setting</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="LandingPage.html">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="search" placeholder="search for ,mentors or mentees"><!-- comment -->
+                <button type="submit">Search</button>
+            </div>
+        </header>
+        <section class="mentorship-matching">
+            <h2>Mentorship Matching</h2>
+            <ul>
+                <!--List of potential mentees/Mentors will be generated dynamically-->
+            </ul>
+            
+            <h2>Filter by</h2>
+            <div class="filtering-opition">
+                <select name="location">
+                    <option value="">Location</option>
+                    <!--Options will be generated dynamically-->
+                </select><br><br>
+                
+                <select name="JobFunctio">
+                    <option value="">Job Function</option>
+                    <!--Options will be generated dynamically-->
+                </select><br><br>
+                
+                <select name="Industry">
+                    <option value="">Industry</option>
+                    <!--Options will be generated dynamically-->
+                </select><br><br>
+                <select name="availability">
+                    <option value="">Availability</option>
+                     <!--Options will be generated dynamically-->
+                </select><br><br>
+           </div>
+            
+            <h2>Sort by</h2>
+            <div class="sorting-options">
+                <select name="sort-by">
+                    <option value="">Location</option>
+                    <option value="">Job Function</option>
+                     <option value="">Rating</option>
+                </select>
+            </div>
+        </section>
+        
+        <section class="messaging-system">
+            <h2>Private message</h2>
+            <div class="message-thread">
+                
+                <!--message will be generated dynamically-->
+                <textarea name="message" placeholder="Type your message here..."></textarea>
+                <button type="submit">Send</button>
+            </div>
+        </section>
+        <<script src="Dashboard.js"></script>
+    </body>
+</html>
